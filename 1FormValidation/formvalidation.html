@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="formvalidationn.js"></script>
+</head>
+<body>
+    <table>
+        <form action="success.html"method="GET"name="myform">
+            <tr>
+                <td>Enter name</td>
+                <td>
+                    <input type="text" name="username" id="uname" placeholder="Enter name" required/><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" name="password" id="passw" placeholder="Enter password"required/><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter email ID</td>
+                <td>
+                    <input type="text" name="emailID" id="email" placeholder="Enter Email ID"/><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Phone Number</td>
+                <td> 
+                    <input type="number" name="phoneNum" id="pNum"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="register" onclick="validationFormExam()"/>
+                </td>
+                <td>
+                    <input type="reset" value="clear"/>
+                </td>
+            </tr>
+            
+        </form>
+    </table>
+</body>
+</html>

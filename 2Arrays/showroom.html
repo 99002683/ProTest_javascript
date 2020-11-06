@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        function showDevice(){
+           arrl1 = '[Dell,Samsung,Hp,Lenovo,Acer,Apple]';
+           //ltemp = arrl1.split('~').join(" <br> ");
+            arrt2 = '[Samsung,Sony,LG,Lenovo]';
+            //ttemp = arrt2.split('~').join(" <br> ");
+            arrm3 = 'Redmi~moto~Samsung~Realme~Oppo~iphone';
+            mtemp = arrm3.split('~').join(" <br> ");
+            var sell = document.getElementById("mydevice");
+            
+            if(sell.value == 'Laptop'){
+                document.getElementById("mydiv").innerHTML= arrl1;
+            }else if(sell.value == 'TV'){
+                document.getElementById("mydiv").innerHTML= arrt2;
+            }else if(sell.value == 'Mobile'){
+                document.getElementById("mydiv").innerHTML=mtemp;
+            }else{
+                document.getElementById("mydiv").innerHTML="";
+        }
+     }
+     </script>
+    </head>
+    <body>
+     Select Device
+     <select name="device" id="mydevice" onclick="showDevice()">
+     <option value="select">--select--</option>
+     <option value="Laptop">Laptop</option>
+     <option value="TV">Television</option>
+     <option value="Mobile">Mobile</option>
+     </select>
+    <div style="background-color:burlywood" id="mydiv"></div>
+    </body>
+    </html>
+</body>
+</html>
